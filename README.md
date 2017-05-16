@@ -1,0 +1,1 @@
+# xfce4-desklet-cpu-indicator
