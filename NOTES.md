@@ -1,21 +1,21 @@
 
-1.8 Miscellaneous kernel statistics in /proc/stat
+1.8 Miscellaneous kernel statistics in /proc/stat<sup>1</sup>
 -------------------------------------------------
 
 Various pieces   of  information about  kernel activity  are  available in the
 /proc/stat file.  All  of  the numbers reported  in  this file are  aggregates
 since the system first booted.  For a quick look, simply cat the file:
 
-  > cat /proc/stat
-  cpu  2255 34 2290 22625563 6290 127 456 0 0 0
-  cpu0 1132 34 1441 11311718 3675 127 438 0 0 0
-  cpu1 1123 0 849 11313845 2614 0 18 0 0 0
-  intr 114930548 113199788 3 0 5 263 0 4 [... lots more numbers ...]
-  ctxt 1990473
-  btime 1062191376
-  processes 2915
-  procs_running 1
-  procs_blocked 0
+  > cat /proc/stat<br>
+  cpu  2255 34 2290 22625563 6290 127 456 0 0 0<br>
+  cpu0 1132 34 1441 11311718 3675 127 438 0 0 0<br>
+  cpu1 1123 0 849 11313845 2614 0 18 0 0 0<br>
+  intr 114930548 113199788 3 0 5 263 0 4 [... lots more numbers ...]<br>
+  ctxt 1990473<br>
+  btime 1062191376<br>
+  processes 2915<br>
+  procs_running 1<br>
+  procs_blocked 0<br>
   softirq 183433 0 21755 12 39 1137 231 21459 2263
 
 The very first  "cpu" line aggregates the  numbers in all  of the other "cpuN"
@@ -69,4 +69,5 @@ of the possible system softirqs. The first column is the total of all
 softirqs serviced; each subsequent column is the total for that particular
 softirq.
 
-
+---
+1. https://www.kernel.org/doc/Documentation/filesystems/proc.txt, accessed 17.05.2017
